@@ -1,0 +1,15 @@
+{
+    "name": "Embed external site",
+    "version": "1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "js": ["jquery-3.1.1.min.js","contentscript.js"],
+		"css": ["style.css"],
+        "matches": ["*://*/*"],
+        "all_frames": true
+    }],
+    "web_accessible_resources": [
+        "main.html"
+    ]
+}
+
